@@ -1,7 +1,7 @@
 //Imports
 const express = require('express');
 const web = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 //Static Files
 web.use(express.static('public'));
 web.use('/css', express.static(__dirname + 'public/css'))
